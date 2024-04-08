@@ -1,0 +1,19 @@
+﻿<Window x:Class="WpfApp4.clientes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp4"
+        mc:Ignorable="d"
+        Title="clientes" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="clientesGrid" AutoGenerateColumns="False" Margin="10">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID Cliente" Binding="{Binding IdCliente}" />
+                <DataGridTextColumn Header="Nombre Compañía" Binding="{Binding NombreCompañia}" />
+                <DataGridTextColumn Header="Nombre de Contacto" Binding="{Binding NombreContacto}" />
+                <DataGridTextColumn Header="Cargo de Contacto" Binding="{Binding CargoContacto}" />
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>
